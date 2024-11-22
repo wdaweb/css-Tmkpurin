@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+        margin: auto;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+      .syringe{
+        top: 200px;
+            position: relative;
+            width: 70px;
+            height: 150px;
+            background-color: #000;
+      }
+
+      .syringe .text{
+        position: absolute;
+        color: #aaa;
+        width: 280px;
+        height: 150px;
+        top: 124px;
+        left: -277px;
+        font-size: 18px;
+        font-family: "微軟正黑體";
+      }
+
+      .syringe .left{
+        position: absolute;
+        background: linear-gradient(
+          white 0%,
+          rgb(202, 202, 202) 65%,
+          white 100%);
+        width: 280px;
+        height: 150px;
+        border: 1px solid rgb(167, 167, 167);
+    
+      }
+
+      .syringe .right{
+        position: absolute;
+        background: linear-gradient(
+          rgb(252, 255, 187) 0%,
+          rgb(202, 202, 202) 65%,
+          rgb(252, 255, 187) 100%);
+        width: 280px;
+        height: 150px;
+        border: 1px solid rgb(167, 167, 167);
+      }
+
+      .syringe .left {
+        right: 70px;
+      }
+
+      .syringe .right {
+        left: 70px;
+      }
+
+      .syringe .left::before{
+        content: '';
+        position: absolute;
+        background: linear-gradient(
+          white 0%,
+          rgb(202, 202, 202) 75%,
+          white 100%);
+        width: 65px;
+        height: 95px;
+        border: 1px solid rgb(167, 167, 167);
+        top: 25px;
+        left: -67px;
+      }
+
+      .syringe .left::after{
+        content: '';
+    position: absolute;
+    background: linear-gradient(white 0%, rgb(202, 202, 202) 65%, white 100%);
+    width: 50px;
+    height: 150px;
+    border: 1px solid rgb(167, 167, 167);
+    top: -2px;
+    left: -118px;
+    border-radius: 8px;
+      }
+
+      .syringe .right::before{
+        content: '';
+        position: absolute;
+        background: linear-gradient(
+          white 0%,
+          rgb(202, 202, 202) 75%,
+          white 100%);
+        width: 65px;
+        height: 95px;
+        border: 1px solid rgb(167, 167, 167);
+        top: 25px;
+        left: 279px;
+        border-radius: 0px 8px 8px 0px ;
+      }
+
+      .syringe .right::after{
+        content: '';
+    position: absolute;
+    background-color: #aaa;
+    width: 125px;
+    height: 3px;
+    top: 70px;
+    left: 345px;
+      }
+
+      .syringe .line{
+        position: absolute;
+        left: -297px;
+        width: 640px;
+        height: 20px;
+        background-color: transparent;
+        background-image: linear-gradient(to left, #000000 0px, transparent 1px);
+        background-repeat: repeat-x;
+        background-size: 18px 20px;
+      }
+
+  </style>
+</head>
+<body>
+  <div class="syringe">
+    <div class="left"></div>
+    <div class="text">Made in Taiwan</div>
+    <div class="right"></div>
+    <div class="line"></div>
+  </div>
+  
+</body>
+</html>
